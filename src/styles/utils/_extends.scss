@@ -1,0 +1,98 @@
+%h1 {
+  font-family: "Mont Bold", sans-serif;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -0.01em;
+}
+
+%h2 {
+  font-family: "Mont Bold", sans-serif;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+%h2-reg {
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+%h3 {
+  font-family: "Mont SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+%uppercase {
+  font-family: "Mont Bold", sans-serif;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+%buttons {
+  font-family: "Mont SemiBold", sans-serif;
+  font-size: 14px;
+}
+
+%body-text {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+%small-text {
+  font-family: "Mont SemiBold", sans-serif;
+  font-size: 12px;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include onTablet {
+    max-width: 700px;
+  }
+
+  @include onDesktop {
+    max-width: 1170px;
+  }
+}
+
+%container-tablet {
+  margin: 0 auto;
+
+  @include onTablet {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+
+  @include onDesktop {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+%container-desktop {
+  @include onDesktop {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+%container-mobile {
+  @include onMobile {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

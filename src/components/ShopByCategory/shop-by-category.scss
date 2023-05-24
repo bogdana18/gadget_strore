@@ -1,0 +1,45 @@
+@import "../../styles/utils";
+
+.shop-by-category {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @extend %h3;
+    color: $primary;
+  }
+
+  &__img {
+    flex-grow: 1;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top 50px left 60px;
+  }
+
+  &__box-img {
+    margin-bottom: 25px;
+    width: 368px;
+    height: 368px;
+    border: 1px solid transparent;
+
+    transition: all 0.3s;
+
+    &--phones {
+      background-color: $colorRoseGold;
+    }
+
+    &--tablets {
+      background-color: $secondary;
+    }
+
+    &--accessories {
+      background-color: $colorRoseRed;
+    }
+  }
+
+  &__count {
+    @extend %body-text;
+    color: $secondary;
+  }
+}

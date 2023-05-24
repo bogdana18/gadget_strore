@@ -1,0 +1,42 @@
+@mixin square-button($size) {
+  @extend %buttons;
+  @extend %flex-center;
+  width: $size;
+  height: $size;
+  border: 1px solid $for-icons;
+  background-color: transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+
+@mixin btn($sizeW, $sizeH) {
+  @extend %buttons;
+  @extend %flex-center;
+  text-align: center;
+  width: $sizeW;
+  height: $sizeH;
+  background-color: $primary;
+  color: $white;
+  border: none;
+}
+
+@mixin onDesktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
