@@ -19,7 +19,7 @@ export const ButtonAddToCart: FC<Props> = ({ product, isSelected }) => {
       })}
       onClick={() => handleToggleAddToCart(product)}
     >
-      {`${isSelected ? 'Added to cart' : 'Add to cart'}`}
+      {`${isSelected ? 'В корзині' : 'Додати в корзину'}`}
     </button>
   );
 };

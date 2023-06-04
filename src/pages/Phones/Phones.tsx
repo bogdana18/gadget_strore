@@ -16,7 +16,7 @@ export const Phones: FC<Props> = ({ isLoading, products }) => {
           <Loader />
         </div>
       ) : (
-        <ProductList products={products} title="Mobile phones" />
+        <ProductList products={products} title="Телефони" />
       )}
     </div>
   );

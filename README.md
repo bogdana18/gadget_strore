@@ -1,7 +1,7 @@
 # Gadgets store
 A single-page application implements online store functionality. User can browse products, add them to the cart and favorites, search products, sort products, change the quantity of products in the cart, and view product details.
 
-# [DEMO](https://bogdana18.github.io/gadgets-store/)
+# [DEMO](https://bogdana18.github.io/gadget_store/)
 
 # Technologies used
 - React.js

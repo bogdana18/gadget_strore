@@ -70,7 +70,7 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
     cellText = product.cell.map((ch) => ` ${ch}`);
 
     charProd = {
-      keys: ['screen', 'resolution', 'processor', 'RAM'],
+      keys: ['екран', 'роздільна здатність', 'процесор', 'ОЗП'],
       values: [
         `${product.screen}`,
         `${product.resolution}`,
@@ -81,13 +81,13 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
 
     techSpecs = {
       keys: [
-        'screen',
-        'resolution',
-        'processor',
-        'RAM',
-        'camera',
-        'zoom',
-        'cell',
+        'екран',
+        'роздільна здатність',
+        'процесор',
+        'ОЗП',
+        'камера',
+        'зум',
+        'мережа',
       ],
       values: [
         `${product.screen}`,
@@ -122,7 +122,7 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
                 <div className="product-details__action">
                   <div className="product-details__select">
                     <p className="product-details__small-text">
-                      Available colors
+                      Доступні кольори
                     </p>
                     <div className="product-details__select-buttons">
                       <ColorsList product={product} pathname={pathname} />
@@ -131,7 +131,7 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
 
                   <div className="product-details__select">
                     <p className="product-details__small-text">
-                      Select capacity
+                      Виберіть ємність
                     </p>
                     <div className="product-details__select-buttons">
                       <CapacityList product={product} pathname={pathname} />
@@ -160,7 +160,7 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
 
               <div className="product-details__botom">
                 <div className="product-details__description">
-                  <h2 className="product-details__subtitle">About</h2>
+                  <h2 className="product-details__subtitle">Опис</h2>
 
                   <div className="product-details__info">
                     {product.description.map((el) => (
@@ -175,7 +175,9 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
                 </div>
 
                 <div className="product-details__tech-specs">
-                  <h2 className="product-details__subtitle ">Tech specs</h2>
+                  <h2 className="product-details__subtitle ">
+                    Технічні характеристики
+                  </h2>
                   <div className="product-details__characteristic">
                     <CharacteristicProduct charProd={techSpecs} />
                   </div>
@@ -183,7 +185,7 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
               </div>
             </div>
             <ProductsSlider
-              title="You may also like"
+              title="Вам також може сподобатися"
               products={randomlySortedGoods}
             />
           </div>

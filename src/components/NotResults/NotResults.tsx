@@ -6,13 +6,13 @@ export const NotResults = () => {
 
   return (
     <div className="not-res">
-      <div className="not-res__title">We are sorry, products not found</div>
+      <div className="not-res__title">Вибачте, товарів не знайдено</div>
       <button
         className="not-res__button button"
         type="button"
         onClick={() => navigate('/')}
       >
-        Go Home
+        Повернутися
       </button>
     </div>
   );

@@ -36,7 +36,7 @@ export const Footer = memo(() => {
                 className="footer__link"
                 rel="noreferrer"
               >
-                contacts
+                контакти
               </Link>
             </li>
             <li className="footer__item">
@@ -46,7 +46,7 @@ export const Footer = memo(() => {
                 className="footer__link"
                 rel="noreferrer"
               >
-                rights
+                права
               </Link>
             </li>
           </ul>

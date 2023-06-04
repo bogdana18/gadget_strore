@@ -23,10 +23,10 @@ export const Favourites: FC<Props> = ({ products }) => {
         <div className="favourites__top-row">
           <Breadcrumbs />
         </div>
-        <h1 className="favourites__title title">Favourites</h1>
-        <p className="favourites__count">{`${favCount} items`}</p>
+        <h1 className="favourites__title title">Обране</h1>
+        <p className="favourites__count">{`${favCount} товарів`}</p>
         {favCount === 0 ? (
-          <h2 className="favourites__empty-title">Favorites list is empty</h2>
+          <h2 className="favourites__empty-title">Список обраних порожній</h2>
         ) : (
           <div className="favourites__list grid">
             {products.map((product) => (

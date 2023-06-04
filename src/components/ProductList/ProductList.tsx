@@ -11,8 +11,8 @@ import { ResultsSearch } from '../ResultsSearch/ResultsSearch';
 import { useAppContext } from '../../context/AppContext';
 import './product-list.scss';
 
-const optionsSort = ['newest', 'alphabetically', 'price'];
-const optionsItemsPage = ['4', '8', '16', 'all'];
+const optionsSort = ['Найновіші', 'Алфавіт', 'Ціна'];
+const optionsItemsPage = ['4', '8', '16', 'всі'];
 
 type Props = {
   products: Product[];
@@ -48,7 +48,7 @@ export const ProductList: FC<Props> = memo(({ products, title }) => {
           <Breadcrumbs />
         </div>
         <h1 className="product-list__title title">{title}</h1>
-        <p className="product-list__count">{`${countProducts} models`}</p>
+        <p className="product-list__count">{`${countProducts} моделі`}</p>
         {countProducts === 0 ? (
           <NotResults />
         ) : (
@@ -56,14 +56,14 @@ export const ProductList: FC<Props> = memo(({ products, title }) => {
             <div className="product-list__dropdowns">
               <Dropdowns
                 options={optionsSort}
-                startValue="Choose an option"
-                label="Sort by"
+                startValue="Оберіть критерій"
+                label="Сортувати за"
                 searchPramsKey="sortBy"
               />
               <Dropdowns
                 options={optionsItemsPage}
-                startValue="All"
-                label="Items on page"
+                startValue="Всі"
+                label="Товарів на сторінці"
                 searchPramsKey="perPage"
               />
             </div>

@@ -21,11 +21,11 @@ export const ShopByCategory: FC<Props> = ({
         <div
           className={classNames(
             'shop-by-category__box-img',
-            { 'shop-by-category__box-img--phones': title === 'Mobile phone' },
-            { 'shop-by-category__box-img--tablets': title === 'Tablets' },
+            { 'shop-by-category__box-img--phones': title === 'Телефони' },
+            { 'shop-by-category__box-img--tablets': title === 'Планшети' },
             {
               'shop-by-category__box-img--accessories': title
-              === 'Accessories',
+              === 'Аксесуари',
             },
           )}
         >
@@ -37,7 +37,7 @@ export const ShopByCategory: FC<Props> = ({
         {title}
       </Link>
 
-      <p className="shop-by-category__count">{`${count} models`}</p>
+      <p className="shop-by-category__count">{`${count} моделі`}</p>
     </div>
   );
 };

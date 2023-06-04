@@ -31,32 +31,32 @@ export const HomePage: FC<Props> = ({ products, countProducts }) => {
         </div>
 
         <div className="home-page__hot-price">
-          <ProductsSlider title="Hot prices" products={sortedByMaxDiscount} />
+          <ProductsSlider title="Гарячі ціни" products={sortedByMaxDiscount} />
         </div>
 
-        <h1 className="home-page__title title">Shop by category</h1>
+        <h1 className="home-page__title title">Категорії</h1>
         <div className="home-page__categories grid">
           <ShopByCategory
             to={Pathname.Phones}
             srcImg="img/category-phones.png"
-            title="Mobile phone"
+            title="Телефони"
             count={countProducts.phones}
           />
           <ShopByCategory
             to={Pathname.Tablets}
             srcImg="img/category-tablets.png"
-            title="Tablets"
+            title="Планшети"
             count={countProducts.tablets}
           />
           <ShopByCategory
             to={Pathname.Accessories}
             srcImg="img/category-accessories.png"
-            title="Accessories"
+            title="Аксесуари"
             count={countProducts.accessories}
           />
         </div>
         <div className="home-page__new-models">
-          <ProductsSlider title="Brand new models" products={sortedByYear} />
+          <ProductsSlider title="Нові моделі" products={sortedByYear} />
         </div>
       </div>
     </div>

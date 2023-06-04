@@ -31,9 +31,9 @@ export const Cart: FC<Props> = ({ products }) => {
           <ButtonBack />
         </div>
 
-        <h2 className="cart__title title">Cart</h2>
+        <h2 className="cart__title title">Корзина</h2>
         {inCartCount === 0 ? (
-          <h2 className="cart__not-res">Your cart is empty</h2>
+          <h2 className="cart__not-res">Ваша корзина порожня</h2>
         ) : (
           <div className="cart__content">
             <div className="cart__products">
@@ -44,7 +44,7 @@ export const Cart: FC<Props> = ({ products }) => {
             <div className="cart__total-box">
               <div className="cart__info">
                 <h2 className="cart__total-price">{`$${totalSum}`}</h2>
-                <p className="cart__total-count">{`Total for ${inCartCount} items`}</p>
+                <p className="cart__total-count">{`Разом за ${inCartCount} товарів`}</p>
               </div>
 
               <a
@@ -52,15 +52,9 @@ export const Cart: FC<Props> = ({ products }) => {
                 href="https://secure.wayforpay.com/qr/qb11a8ee22ed5"
                 type="button"
                 className="cart__button button  pay__link"
-                // onClick={() => setIsOpenModal(true)}
               >
-                Checkout
+                Оплатити
               </a>
-              { /* {isOpenModal && (
-                  <div className="cart__modal">
-                  <Modal setIsOpenModal={setIsOpenModal} />
-                </div>
-            )} */ }
             </div>
           </div>
         )}

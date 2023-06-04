@@ -16,7 +16,7 @@ export const Accessories: FC<Props> = ({ isLoading, products }) => {
           <Loader />
         </div>
       ) : (
-        <ProductList products={products} title="Accessories" />
+        <ProductList products={products} title="Аксесуари" />
       )}
     </div>
   );

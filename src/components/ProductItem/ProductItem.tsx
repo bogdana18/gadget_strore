@@ -29,7 +29,7 @@ export const ProductItem: FC<Props> = ({ product }) => {
 
   const ramItem = `${Number.parseInt(ram, 10)} GB`;
   const charProd = {
-    keys: ['screen', 'capacity', 'RAM'],
+    keys: ['екран', 'ємкість', 'ОЗП'],
     values: [`${screen}`, `${capacity}`, `${ramItem}`],
   };
 
