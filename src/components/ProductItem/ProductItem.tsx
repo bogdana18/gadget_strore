@@ -42,8 +42,8 @@ export const ProductItem: FC<Props> = ({ product }) => {
             <h2 className="product-item__subtitle">{name}</h2>
           </Link>
           <div className="product-item__box-price">
-            <span className="product-item__price">{`$${price}`}</span>
-            <span className="product-item__full-price">{`$${fullPrice}`}</span>
+            <span className="product-item__price">{`${price * 37} ₴`}</span>
+            <span className="product-item__full-price">{`${fullPrice * 37} ₴`}</span>
           </div>
           <div className="product-item__characteristic">
             <CharacteristicProduct charProd={charProd} />

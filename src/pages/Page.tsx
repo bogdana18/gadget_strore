@@ -12,6 +12,7 @@ import { NotFound } from './NotFound/NotFound';
 import { HomePage } from './HomePage/HomePage';
 import { Phones } from './Phones/Phones';
 import { Tablets } from './Tablets/Tablets';
+import { Contacts } from './Contacts/Contacts';
 import { Accessories } from './Accessories/Accessories';
 import { Cart } from './Cart/Cart';
 import { Favourites } from './Favourites/Favourites';
@@ -161,6 +162,12 @@ export const Page: FC = () => {
               path="/"
               element={
                 <HomePage products={products} countProducts={countProducts} />
+              }
+            />
+            <Route
+              path="/contacts"
+              element={
+                <Contacts />
               }
             />
             <Route path={Pathname.Home} element={<Navigate to="/" replace />} />

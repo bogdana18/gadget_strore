@@ -32,7 +32,6 @@ export const Footer = memo(() => {
             <li className="footer__item">
               <Link
                 to="/contacts"
-                target="_blank"
                 className="footer__link"
                 rel="noreferrer"
               >
@@ -41,7 +40,7 @@ export const Footer = memo(() => {
             </li>
             <li className="footer__item">
               <Link
-                to="https://t.me/lexusenko"
+                to="https://minjust.gov.ua/m/str_4487"
                 target="_blank"
                 className="footer__link"
                 rel="noreferrer"

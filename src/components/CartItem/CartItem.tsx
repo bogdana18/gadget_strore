@@ -61,8 +61,8 @@ export const CartItem: FC<Props> = ({ product }) => {
           </button>
         </div>
         <p className="cart-item__total-price-product">
-          &#36;
-          {product.price}
+          {product.price * 37}
+          ₴
         </p>
       </div>
     </div>

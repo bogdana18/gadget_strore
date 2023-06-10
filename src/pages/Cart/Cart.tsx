@@ -43,7 +43,7 @@ export const Cart: FC<Props> = ({ products }) => {
             </div>
             <div className="cart__total-box">
               <div className="cart__info">
-                <h2 className="cart__total-price">{`$${totalSum}`}</h2>
+                <h2 className="cart__total-price">{`₴${totalSum * 37}`}</h2>
                 <p className="cart__total-count">{`Разом за ${inCartCount} товарів`}</p>
               </div>
 

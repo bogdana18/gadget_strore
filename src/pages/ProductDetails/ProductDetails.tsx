@@ -138,8 +138,8 @@ export const ProductDetails: FC<Props> = ({ goods }) => {
                     </div>
                   </div>
                   <div className="product-details__price-box">
-                    <span className="product-details__discount">{`$${product.priceDiscount}`}</span>
-                    <span className="product-details__regular">{`$${product.priceRegular}`}</span>
+                    <span className="product-details__discount">{`₴${product.priceDiscount}`}</span>
+                    <span className="product-details__regular">{`₴${product.priceRegular}`}</span>
                   </div>
                   <div className="product-details__actions-button">
                     <ButtonAddToCart
